@@ -1,0 +1,23 @@
+name: Test Lambda Webhook
+on: workflow_dispatch
+jobs:
+  run-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: |
+          node -v
+          npm -v
+      - name: python command
+        shell: python
+        run: print('hello from python')
+  run-command-2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: |
+          pip --version
+          python --version
+      - name: python command
+        shell: python
+        run: print('hello from python')
