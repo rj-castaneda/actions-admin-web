@@ -9,8 +9,8 @@ jobs:
           node -v
           npm -v
       - name: python command
-        shell: python
-        run: print('hello from python')
+        shell: bash
+        run: python sleep.py
   run-command-2:
     runs-on: ubuntu-latest
     steps:
