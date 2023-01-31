@@ -6,7 +6,7 @@ on:
   # push:
 jobs:
   run-command:
-    runs-on: self-hosted
+    runs-on: macos-latest
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
         run: python3 sleep.py
         
   run-command-2:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: echo a string
         run: |
