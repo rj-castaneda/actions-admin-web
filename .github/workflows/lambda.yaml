@@ -1,5 +1,7 @@
 name: Test Webhook
 on: 
+  repository_dispatch:
+    types: [run]
   workflow_dispatch:
   push:
 jobs:
